@@ -1,0 +1,89 @@
+.sidebar {
+    width: 20%;
+    background-color: black;
+    height: 100vh;
+}
+.side-logo {
+    display: flex;
+    margin-left: 12px;
+}
+.Nav_Images{
+    margin-top: 12px;
+}
+.spotify-logo {
+    object-fit: fill;
+    width: 140px;
+    height: 40px;
+}
+.side-cantainer {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.box {
+    width: 100%;
+    height: 149px;
+}
+
+/* side icon  */
+.side-icon-container {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 20px;
+}
+
+.side-icon-item {
+    gap: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.side-icon-item:hover {
+    transform: scale(1.05);
+}
+
+.side-icon {
+    width: 22px;
+    height: 23px;
+    margin-right: 8px;
+}
+
+.side-icon-item h3 {
+    font-size: 14px;
+    color: white;
+    text-transform: capitalize;
+    white-space: nowrap;
+}
+
+.paylist {
+    display: flex;
+    background-color: aliceblue;
+}
+
+.paylist-Image {
+    margin: 0;
+    object-fit: scale-down;
+    align-content: center;
+    justify-content: center;
+}
+
+.potcust {
+    background-color: #65de90;
+    margin: 0;
+}
+
+#potcust-Img {
+    margin: 0;
+    color: #15311f;
+}
+
+.side-favrate {
+    color: aliceblue;
+    font-size: 12px;
+    margin-left: -16px;
+}
+/*end of side bar*/

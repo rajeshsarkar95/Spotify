@@ -1,0 +1,19 @@
+.Maincontainer {
+    display: flex;
+    flex-direction: row; 
+    height: 100vh; 
+    width: 100%;
+} 
+
+.navbar {
+    background-color: #333;
+    color: white;
+    width:10%; 
+    padding: 20px;
+}
+
+.maincontent {
+    flex-grow: 1; 
+    padding: 20px;
+    background-color: #f4f4f4;
+}

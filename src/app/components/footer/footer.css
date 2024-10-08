@@ -1,0 +1,77 @@
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #181818;
+  height: 12vh;
+}
+
+.footer_Dreaming {
+  align-content: center;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  color: white;
+}
+
+.heading {
+  margin: 0;
+  padding: 0;
+  align-content: center;
+}
+
+.herdicon {
+  align-content: center;
+  margin-left: 30px;
+}
+
+.footer_icon_heart {
+  width: 12px;
+  height: 12px;
+}
+
+.footer_icon_green {
+  color: green;
+}
+
+p,
+h4 {
+  padding: 0;
+  margin: 0;
+}
+
+.footer_Iames {
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.Footer_images {
+  width: 80%;
+  height: 80%;
+}
+
+.footer_play {
+  color: white;
+  align-content: center;
+
+}
+.footer_volume {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  color: white;
+  align-content: center;
+}
+.music_playicon {
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 30%;
+}
+.shuffle {
+  align-content: center;
+}
+.laptop{
+  color: green;
+}
