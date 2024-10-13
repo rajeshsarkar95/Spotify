@@ -1,11 +1,8 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 "use client";
-
 import React from "react";
 import "./footer.css";
 import Image from "next/image";
-import music from "@/app/public/Musicicon.png";
-import volume from "@/app/public/Volume.png";
 import Rectangle from "@/app/public/Rectangle.png";
 import { CiHeart } from "react-icons/ci";
 import { FaHeart } from "react-icons/fa";
@@ -21,8 +18,6 @@ import { PiQueue } from "react-icons/pi";
 import { LuLaptop2 } from "react-icons/lu";
 import { HiOutlineSpeakerWave } from "react-icons/hi2";
 import { LuMoveDiagonal } from "react-icons/lu";
-
-
 function footer() {
   const [visible, setVisible] = useState(false);
   const [play, setPlay] = useState(false);
@@ -81,7 +76,7 @@ function footer() {
 
             <div className="play">
               {play ? (
-                <i  onClick={handlepoused}>
+                <i onClick={handlepoused}>
                   <FaPlay />
                 </i>
               ) : (
@@ -97,23 +92,47 @@ function footer() {
               </i>
             </div>
             <div className="repite">
-              <i >
+              <i>
                 <BsRepeat />
               </i>
             </div>
           </div>
         </div>
         <div className="footer_volume">
-          <div className="microphone"><i><TbMicrophone2/></i></div>
-          <div className="queue"><i><PiQueue /></i></div>
-          <div className="laptop"><i><LuLaptop2/></i></div>
-          <div className="speakar"><i><HiOutlineSpeakerWave /></i></div>
-          <div className="radiobutton"><progress id="file" value="0" max="100"> 32% </progress></div>
-          <div className="diagonal"><i><LuMoveDiagonal /></i></div>
+          <div className="microphone">
+            <i>
+              <TbMicrophone2 />
+            </i>
+          </div>
+          <div className="queue">
+            <i>
+              <PiQueue />
+            </i>
+          </div>
+          <div className="laptop">
+            <i>
+              <LuLaptop2 />
+            </i>
+          </div>
+          <div className="speakar">
+            <i>
+              <HiOutlineSpeakerWave />
+            </i>
+          </div>
+          <div className="radiobutton">
+            <progress id="file" value="0" max="100">
+              {" "}
+              32%{" "}
+            </progress>
+          </div>
+          <div className="diagonal">
+            <i>
+              <LuMoveDiagonal />
+            </i>
+          </div>
         </div>
       </div>
     </>
   );
 }
-
 export default footer;

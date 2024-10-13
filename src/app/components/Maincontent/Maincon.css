@@ -4,7 +4,6 @@
     height: 100vh;
     background-color: #222222;
 }
-
 .main-nav {
     align-items: flex-end;
     display: flex;
@@ -12,14 +11,12 @@
     justify-content: space-between;
     align-items: center;
 }
-
 .nav-circals {
     margin-top: 12px;
     display: flex;
     gap: 20px;
     margin-left: 23px;
 }
-
 .first-arrow,
 .second-arrow {
     display: flex;
@@ -40,7 +37,6 @@
     margin: 0;
     padding: 0;
 }
-
 .profile-con {
     margin-top: 12px;
     display: flex;
@@ -52,14 +48,12 @@
     margin-right: 36px;
     width: fit-content;
 }
-
 .profile-image {
     width: 25px;
     height: 25px;
     border-radius: 50%;
     margin-right: 12px;
 }
-
 .profile-name {
     color: white;
     margin-right: 12px;
@@ -81,12 +75,24 @@
     margin-top: 50px;
     width: 100%;
 }
-
+.second_container_flex{
+    display: flex;
+    justify-content: space-between;
+}
+.see_heading{
+    color: white;
+    margin-right: 39px;
+    cursor: context-menu;
+}
+.see_heading:hover{
+    text-decoration: underline;
+}
 .second_container {
     width: 100%;
     height: 35vh;
     margin-top: 50px;
 }
+
 
 .Main_heading {
     color: #FFFFFF;
@@ -94,7 +100,6 @@
     font-size: 27px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
 .Main_boxs {
     margin-top: 16px;
     gap: 20px;
@@ -104,7 +109,6 @@
     height: 10vh;
     background-color: #303030;
 }
-
 .Main_music_img {
     width: 100%;
     margin: 0;

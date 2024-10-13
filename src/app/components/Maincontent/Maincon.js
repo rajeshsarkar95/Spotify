@@ -12,30 +12,71 @@ import { MdManageAccounts } from "react-icons/md";
 
 function Mainbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [expand, setExpand] = useState(false);
+   
+  const currentHour = new Date().getHours();
 
+  let greeting = "";
+
+  if(currentHour < 12){
+    greeting = "Good Morning";
+  } else if (currentHour < 18 ){
+    greeting = "Good Afternoon";
+  } else {
+    greeting = "Good Evening"
+  }
   const handlevisible = () => {
     setIsOpen(!isOpen);
   };
+  const handleExpand = () => {
+    setExpand(true);
+  };
+  const handleCollapse = () => {
+    setExpand(false);
+  };
   return (
     <>
-      <div  className="main-content">
+      <div
+        className="main-content"
+        style={{
+          width: expand ? "75%" : "80%",
+          transition: "width 0.5s ease",
+        }}
+      >
         <div className="main-nav">
           <div className="nav-circals">
-            <div className="first-arrow">
-              <i>
+            <div
+              onClick={handleCollapse}
+              disabled={expand}
+              className="first-arrow"
+            >
+              <i
+                style={{
+                  color: !expand ? "gray" : "inherit",
+                  cursor: !expand ? "not-allowed" : "pointer",
+                }}
+              >
                 <IoIosArrowBack />
               </i>
             </div>
-            <div className="second-arrow">
-              <i>
+            <div
+              onClick={handleExpand}
+              disabled={!expand}
+              className="second-arrow"
+            >
+              <i
+                style={{
+                  color: expand ? "gray" : "inherit",
+                  cursor: expand ? "not-allowed" : "pointer",
+                }}
+              >
                 <IoIosArrowForward />
               </i>
             </div>
           </div>
-
           <div onClick={handlevisible} className="profile-con">
             <Image src={profile} alt="" className="profile-image" />
-            <div className="profile-name">Anjeli </div>
+            <div className="profile-name">Katrina</div>
             <div className="profile-icon">
               <i>{isOpen ? <IoMdArrowDropdown /> : <MdArrowDropUp />}</i>
             </div>
@@ -56,7 +97,7 @@ function Mainbar() {
 
         <div className="Main_Container">
           <div className="first_container">
-            <h1 className="Main_heading">Good morning</h1>
+            <h1 className="Main_heading">{greeting}</h1>
             {/* first box */}
             <div className="main_box_container">
               <div className="Main_boxs">
@@ -106,7 +147,10 @@ function Mainbar() {
             </div>
           </div>
           <div className="second_container">
-            <h1 className="Main_heading">Shows you might like</h1>
+            <div className="second_container_flex">
+              <h1 className="Main_heading">Shows you might like</h1>
+              <h4 className="see_heading">Show all</h4>
+            </div>
             <div className="card-container">
               {/* card  1 */}
               <div className="card">

@@ -1,5 +1,5 @@
 .sidebar {
-    width: 20%;
+    width: auto;
     background-color: black;
     height: 100vh;
 }
@@ -18,7 +18,18 @@
 .side-cantainer {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 34px;
+}
+.side_insttal{
+    gap: 6px;
+    align-items: center;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 10%;
+    margin-top: 56px;
+    margin-left: 26px;
+    color: white;
 }
 .box {
     width: 100%;
